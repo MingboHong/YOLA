@@ -7,6 +7,6 @@
 <h4 align = "center"> <sup>2</sup>Kuaishou Technology</center></h4>
 <h4 align = "center"> <sup>3</sup>University of Electronic Science and Technology of China</center></h4>
 
-This is the official implementation of our NeurIPS2024 paper， YOLA-You-Only-Look-Around-Learning-Illumination-Invariant-Feature-for-Low-light-Object-Detection.
+
 
 The code is coming soon.
