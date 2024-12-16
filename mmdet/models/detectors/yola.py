@@ -9,7 +9,7 @@ from .base import BaseDetector
 import torch
 import numpy as np
 import torch.nn.functional as F
-from .yola import IIBlock
+from .yola_utils import IIBlock
 
 
 class YOLABaseDetector(BaseDetector):
