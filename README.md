@@ -128,7 +128,7 @@ For more detailed information, please refer to [mmdetection installation](https:
 
 Put the YOLA/configs/tood  and YOLA/configs/yolov3 inside the mmdetection/configs
 
-Put YOLA/mmdet/datasets/dark_face.py and YOLA/mmdet/datasets/dark_face.py  inside mmdetection/mmdet/datasets/ 
+Put YOLA/mmdet/datasets/exdark_voc.py and YOLA/mmdet/datasets/dark_face.py  inside mmdetection/mmdet/datasets/ 
 
 You need to update the mmdetection/mmdet/datasets/__ init __.py as follow:
 
