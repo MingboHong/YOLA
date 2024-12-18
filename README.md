@@ -12,7 +12,7 @@ In this paper, we introduce YOLA, a novel framework for object detection in low-
 
 ## Summary
 <p align="center">
-<img src=https://github.com/MingboHong/YOLA/blob/master/figures/yola_poster.png width="780px" height=430px">
+<img src=https://github.com/MingboHong/YOLA/blob/master/figures/yola_poster.png width="880px" height=430px">
 </p>
 
 
