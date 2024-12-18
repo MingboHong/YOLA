@@ -18,7 +18,7 @@ In this paper, we introduce YOLA, a novel framework for object detection in low-
 
 ## Pipeline
 <p align="center">
-<img src=https://github.com/MingboHong/YOLA/blob/master/figures/yola_ppl.png width="780px" height=430px">
+<img src=https://github.com/MingboHong/YOLA/blob/master/figures/yola_ppl.png width="580px" height=230px">
 </p>
 
 
