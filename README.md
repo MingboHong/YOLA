@@ -36,39 +36,8 @@ In this paper, we introduce YOLA, a novel framework for object detection in low-
 |        | COCO     | TOOD     | 42.5 | [GoolgeDrive](https://drive.google.com/drive/folders/1xYCNqGVepj6NLweRAJkXPCZsv1010VZo?usp=drive_link)|
 
 
-**For further performance improvements, consider using the YOLA detector pretrained on the MSCOCO dataset as a base model, and fine-tune it on the downstream dataset.**
-
-We observe that the TOOD detector will be further improved (DarkFace 67.5 V.S. 68.9; ExDark 75.3 V.S. 75.5)
-
-For example:
-
-Modify configs/xxx_yola_xxxx.py
-
-```
-#original detector trained on MSCOCO ckpt
-load_from ='https://download.openmmlab.com/mmdetection/v2.0/tood/tood_r50_fpn_1x_coco/tood_r50_fpn_1x_coco_20211210_103425-20e20746.pth'
-```
-to
-```
-#YOLA detector trained on MSCOCO ckpt
-load_from ='pretrain/[pretrain].pth'
-```
-## Results of YOLA leveraging pre-trained model
-| Method | Dataset  | Detector | mAP  | Link |
-|--------|----------|----------|------|------|
-|  YOLA  | Exdark   | TOOD     | 75.5 | TOD  |
-|        | DarkFace | TOOD     | 68.9 | TOD  |
-|        | Exdark   | YOLOv3   | TOD  | TOD  |
-|        | DarkFace | YOLOv3   | 62.9 | TOD  |
-
-
-
-
 
 ## Dataset
-
-**Step-1:** 
-
 
 **EXDark Dataset**: 
 You can download exdark from [official link](https://github.com/cs-chan/Exclusively-Dark-Image-Dataset) or my customizer structure [GoogleDrive](https://drive.google.com/file/d/1zT-Kj3nRDPp0b8SItmhB0fcZoWVdUt5m/view?usp=drive_link)
@@ -152,6 +121,37 @@ __all__ = [
     balabalabala......, 'YOLA'
 ]
 ```
+
+**For further performance improvements, consider using the YOLA detector pretrained on the MSCOCO dataset as a base model, and fine-tune it on the downstream dataset.**
+
+We observe that the TOOD detector will be further improved (DarkFace 67.5 V.S. 68.9; ExDark 75.3 V.S. 75.5)
+
+For example:
+
+Modify configs/xxx_yola_xxxx.py
+
+```
+#original detector trained on MSCOCO ckpt
+load_from ='https://download.openmmlab.com/mmdetection/v2.0/tood/tood_r50_fpn_1x_coco/tood_r50_fpn_1x_coco_20211210_103425-20e20746.pth'
+```
+to
+```
+#YOLA detector trained on MSCOCO ckpt
+load_from ='pretrain/[pretrain].pth'
+```
+## Results of YOLA leveraging pre-trained model
+| Method | Dataset  | Detector | mAP  | Link |
+|--------|----------|----------|------|------|
+|  YOLA  | Exdark   | TOOD     | 75.5 | TOD  |
+|        | DarkFace | TOOD     | 68.9 | TOD  |
+|        | Exdark   | YOLOv3   | TOD  | TOD  |
+|        | DarkFace | YOLOv3   | 62.9 | TOD  |
+
+
+
+
+
+
 ## 👀Tips
 
 * 💥 It is recommended to insert the YOLA module before the detector, as it operates on the **image space** rather than the feature space.
