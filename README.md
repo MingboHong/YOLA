@@ -198,9 +198,9 @@ If our work help to your research, please cite our paper, thx.
 
 ## Update
 We sincerely appreciate [@lyf1212](https://github.com/lyf1212) for pointing out the issue in Equation (5) of our paper, Here, we correct Equation (5) as follows:
-$$
-M_{rb} = \prod_{\substack{i,j=1 \\ i \neq j}}^{k^2} \left( \frac{R_{p_i}}{B_{p_i}} \right)^{w_i} \left( \frac{B_{p_j}}{R_{p_j}} \right)^{w_j}
-$$
+<p align="center">
+<img src=https://github.com/MingboHong/YOLA/blob/master/figures/formula.png width="200px" height=70px">
+</p>
 
 ## 🎖 Acknowledgments
 
