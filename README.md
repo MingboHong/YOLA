@@ -1,4 +1,4 @@
-# [NeurIPS 2024] YOLA-You-Only-Look-Around-Learning-Illumination-Invariant-Feature-for-Low-light-Object-Detection
+# [NeurIPS 2024] YOLA-You-Only-Look-Around-Learning-Illumination-Invariant-Feature-for-Low-light-Object-Detection [paper](https://openreview.net/pdf?id=MocRdX0n7B)
 
 <h4 align = "center">Mingbo Hong<sup>1</sup>, Shen Cheng<sup>1</sup>, Haibin Huang<sup>2</sup>, Haoqiang Fan<sup>1</sup>, Shuaicheng Liu<sup>3</sup></h4>
 <h4 align = "center"> <sup>1</sup>Megvii Technology</center></h4>
@@ -189,15 +189,18 @@ python tools/test.py configs/tood/tood_yola_exdark.py [model path] --out [NAME].
 ## Citation
 If our work help to your research, please cite our paper, thx.
 ```
-@article{hong2024you,
-  title={You Only Look Around: Learning Illumination Invariant Feature for Low-light Object Detection},
-  author={Hong, Mingbo and Cheng, Shen and Huang, Haibin and Fan, Haoqiang and Liu, Shuaicheng},
-  journal={arXiv preprint arXiv:2410.18398},
-  year={2024}
+@inproceedings{chengyou,
+  title={You Only Look Around: Learning Illumination-Invariant Feature for Low-light Object Detection},
+  author={Cheng, Shen and Huang, Haibin and Fan, Haoqiang and Liu, Shuaicheng and others},
+  booktitle={The Thirty-eighth Annual Conference on Neural Information Processing Systems}
 }
 ```
 
-
+## Update
+We sincerely appreciate [@lyf1212](https://github.com/lyf1212) for pointing out the issue in Equation (5) of our paper, Here, we correct Equation (5) as follows:
+$$
+M_{rb} = \prod_{\substack{i,j=1 \\ i \neq j}}^{k^2} \left( \frac{R_{p_i}}{B_{p_i}} \right)^{w_i} \left( \frac{B_{p_j}}{R_{p_j}} \right)^{w_j}
+$$
 
 ## 🎖 Acknowledgments
 
